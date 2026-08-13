@@ -1,0 +1,78 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  height: var(--header-height);
+  background: transparent;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding-top: var(--space-4);
+}
+
+.header__brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--color-gold);
+  font-family: 'Rubik Mono One', 'VT323', monospace;
+  line-height: 1;
+}
+
+.brand-time {
+  font-size: 32px;
+  letter-spacing: -1px;
+}
+
+.brand-studio {
+  font-size: 20px;
+  margin-left: 12px;
+  letter-spacing: 1px;
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+}
+
+.header__link {
+  font-family: var(--font-ui);
+  color: #fff;
+  font-size: 22px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.header__link:hover {
+  color: var(--color-gold);
+}
+
+.header__btn-apply {
+  background: var(--color-gold);
+  color: var(--color-bg);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 20px;
+  padding: 8px 32px;
+  border: 4px dotted var(--color-coral);
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition: transform 0.1s ease;
+}
+
+.header__btn-apply:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  .header__link {
+    display: none;
+  }
+}
